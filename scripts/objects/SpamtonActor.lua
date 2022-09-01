@@ -159,7 +159,7 @@ function Spamton:setPartSwingShaking(name, shake)
     if type(shake) == "number" then
         part.swing_shake = shake
     elseif shake then
-        part.swing_shake = 2
+        part.swing_shake = math.rad(2)
     else
         part.swing_shake = 0
     end
