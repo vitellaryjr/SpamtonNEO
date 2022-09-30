@@ -274,7 +274,7 @@ function Spamton:snapString(index, remove)
     else
         str.alpha = 0
         self.timer:after(1, function()
-            str:fadeTo(1, 0.05)
+            str:fadeToSpeed(1, 0.05)
         end)
     end
     local snap = self:addChild(SpamtonSnap(str.x + math.sin(str.siner/30)*2, str.y, str.top_x))
